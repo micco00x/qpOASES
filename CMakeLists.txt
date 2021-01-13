@@ -61,7 +61,7 @@ option(QPOASES_BUILD_EXAMPLES "Build examples." ON)
 ############################################################
 #################### compiler flags ########################
 ############################################################
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D__NO_COPYRIGHT__")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -D__NO_COPYRIGHT__")
 IF ( UNIX )
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -Wfloat-equal -Wshadow -DLINUX")
     SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_DEBUG} -O3 -finline-functions")
